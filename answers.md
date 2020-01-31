@@ -23,3 +23,12 @@ I found strikingly different patterns in the sentences created by grammar1 and g
 Considering the reasoning above plus the answers for the previous two tasks, I believe that it is not very reasonable to let each grammar rule have uniform weight. This is because whether in the examples provided or in our real lives, some grammar rules are more commonly occuring than others. Grammar1 does better job than grammar2 mostly due to assigning higher weights to more commonly seen grammar rules.
 
 Grammar1 and Grammar2 combined is performing even better, as it works similarly to the backoff model I learned in the spelling correction homework (homework 1). If there are any occurences of miscs, the work is handled by grammar2. But, since the weights given by grammar1 are more realistic, it is a better language model.
+
+## Task 4
+
+For this task I started from what is given grammar1 and grammar2, and tried to assign different weights. For the grammatical rules that are more likely to happen, I assigned stronger weights to those rules that happen more in our real lives. I manually adjusted the relative weights between each rules, and attempted to run cfggen.pl after each modification.
+
+## Task 5
+I have got a total of 19 / 20 grammatically correct sentences, although many of them do not really make sense from a human's perspective.
+
+

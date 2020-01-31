@@ -1,0 +1,19 @@
+ROOT -> S1 1 
+S1 -> NP VP . 1
+VP -> +Verb NP 5
+VP -> VP PP 2
+NP -> +Det Noun 10 
+NP -> +Proper 5
+PP -> Prep NP 2
+
++Det -> Det 3
++Det -> Det +Adj 2
+
++Adj -> Adj 5
++Adj -> AdjT 1
+
++Verb -> VerbT  5
++Verb -> Adverb VerbS 3
+
++Proper -> Proper 3
++Proper -> Proper Possesive Noun 3
